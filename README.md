@@ -25,7 +25,7 @@ pip install pybresenham-tspspi
 import matplotlib.pyplot as plt
 import numpy as np
 
-from bresenham import trace_line
+from bresenham.bresenham import trace_line
 
 fig, ax = plt.subplots()
 
@@ -38,7 +38,7 @@ ax.imshow(img)
 ### Simple lines using callbacks
 
 ```
-from bresenham import trace_line
+from bresenham.bresenham import trace_line
 
 def mycallback(point):
     print(f"Point at {point[0]} x {point[1]}")
@@ -51,7 +51,7 @@ trace_line((-25,-10),(10,10),mycallback)
 ```
 import matplotlib.pyplot as plt
 import numpy as np
-from bresenham import trace_line_antialiased_it
+from bresenham.bresenham import trace_line_antialiased_it
 
 fig, ax = plt.subplots()
 
@@ -64,7 +64,7 @@ ax.imshow(imgaa)
 ### Antialiased lines using callbacks
 
 ```
-from bresenham import trace_line_antialiased
+from bresenham.bresenham import trace_line_antialiased
 
 def mycallback(point, weight):
     print(f"Point at {point[0]} x {point[1]} with weight {weight}")

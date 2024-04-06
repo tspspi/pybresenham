@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from bresenham import trace_line, trace_line_antialiased_it
+from bresenham.bresenham import trace_line, trace_line_antialiased_it
 
 fig, ax = plt.subplots(1,2,figsize=(6.4, 4.8*2))
 
